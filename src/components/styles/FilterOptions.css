@@ -1,0 +1,52 @@
+.filter-container{
+    width: 95%;
+}
+
+.filter-options {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.filter-options input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 12px;
+    font-size: 0.9em;
+    background-color: white;
+}
+
+.filter-options select {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 12px;
+    font-size: 0.9em;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.btn-search {
+    background-color: #007BFF;
+    /* Azul */
+    width: 100%;
+}
+
+.btn-search:hover {
+    background-color: #0056b3;
+    /* Azul más oscuro al pasar el cursor */
+}
+
+
+@media (min-width: 992px){
+    .filter-options{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}

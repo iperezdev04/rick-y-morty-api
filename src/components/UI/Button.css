@@ -1,0 +1,57 @@
+.btn{
+    padding: 12px;
+    font-size: 1.05em;
+    width: 90%;
+    
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 12px;
+    color: rgb(240, 223, 223);
+}
+
+.btn-prev:disabled {
+    cursor: not-allowed;
+    background-color: #e57373; /* Rojo claro para estado deshabilitado */
+}
+
+.btn-prev{
+    background-color: #bb1f1f; /* Rojo oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-prev:hover {
+    background-color: #a11a1a; /* Rojo más oscuro al pasar el cursor */
+}
+
+.btn-next {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+}
+
+.btn-next:disabled {
+    cursor: not-allowed;
+    background-color: #116616; /* Verde claro para estado deshabilitado */
+}
+
+@media (min-width: 560px) and (max-width: 1024px){
+    .btn{
+        width: 95%;
+    }
+
+}
+@media (min-width: 1025px) {
+    .btn{
+        width: 48%;
+    }
+
+}
