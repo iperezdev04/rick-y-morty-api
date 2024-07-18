@@ -45,6 +45,13 @@
 
 
 @media (min-width: 992px){
+
+    .filter-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .filter-options{
         flex-direction: row;
         flex-wrap: nowrap;

@@ -51,6 +51,8 @@ export const ApiProvider = ({ children }) => {
     setFilters((prev) => ({ ...prev, ...newFilters }));
   }
 
+  
+
   return (
     <ApiContext.Provider value={{
       isLoading, isError, error,
