@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 
 
+import './CharacterCard.css';
+import CardList from "../CardList";
+
 export const CharacterPage = () => {
 
     const { id } = useParams();
@@ -24,7 +27,9 @@ export const CharacterPage = () => {
             });
     }
 
-    function returnToHome(){
+    // console.log(character.origin.name)
+
+    function returnToHome() {
         navigate('/')
         // navigate(-1)
     }
@@ -32,11 +37,34 @@ export const CharacterPage = () => {
     return (
         <div>
             <h1>Character Page</h1>
-            <p>ID: {id}</p>
-            <p>{character.name}</p>
-           <img src={character.image} alt={character.name} />
 
-           <button onClick={returnToHome} >Return</button>
+            <div className="card-container">
+                <div className="card-character">
+
+                    <img src={character.image} alt={character.name} className="character-image" />
+
+                    <div className="info-character">
+                        {/* NOMBRE */}
+                        <p> Name: {character.name}</p>
+
+                        {/* ESPECIES */}
+                        <p>Specie: {character.species}</p>
+
+                        {/* STATUS */}
+                        <p>Status: {character.status}</p>
+                        {/*ORIGEN*/}
+                        <p>Origin: {character.origin?.name}</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <h2>More Characters:</h2>
+            <CardList/>
+
+
+            <button onClick={returnToHome} >Return</button>
         </div>
     );
 };

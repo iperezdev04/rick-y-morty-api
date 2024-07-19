@@ -1,0 +1,31 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.card-character{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* gap:2em; */
+    border: 1px solid green;
+    /* width: auto */
+    width: 600px;
+}
+
+.info-character{
+    font-size: 1.3em;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.info-character p{
+    padding: 10;
+    /* margin: 10px; */
+}
