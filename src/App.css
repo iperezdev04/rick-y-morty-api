@@ -38,3 +38,9 @@ a{
   display: flex;
   flex-direction: column;
 }
+
+
+.custom-carousel .p-carousel-indicators {
+  display: none;
+  gap: 20px;
+}

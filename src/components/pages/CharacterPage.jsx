@@ -4,6 +4,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import './CharacterCard.css';
 import CardList from "../CardList";
+import { Carousel } from "primereact/carousel";
+import CarrouselTemplate from "../CarrouselTemplate";
+// import { responsiveOptions } from "../../responsiveOptions";
+// import { CarrouselTemplate } from "../CarrouselTemplate";
 
 export const CharacterPage = () => {
 
@@ -61,8 +65,9 @@ export const CharacterPage = () => {
             </div>
 
             <h2>More Characters:</h2>
-            <CardList/>
 
+            <CarrouselTemplate/>
+            {/* <CardList/> */}
 
             <button onClick={returnToHome} >Return</button>
         </div>
