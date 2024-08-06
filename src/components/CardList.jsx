@@ -12,11 +12,10 @@ function CardList() {
       {isLoading ? (
         <div>Cargando...</div>
       ) : data?.results?.length > 0 ? (
-        data.results.map(({ id, name, image, status, species }) => (
-          <div key={id} className="card">
-            <Link to={`/character/${id}`} className='card-link'>
-                <Card name={name} image={image} status={status} species={species} id={id} />
-            </Link>
+        data.results.map((datos) => (
+          <div key={datos.id} className="card">
+                <Card datos={datos} />
+                
           </div>
   ))
       ) : (

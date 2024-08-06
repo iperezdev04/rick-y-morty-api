@@ -1,19 +1,23 @@
 import React from 'react'
 
 import './styles/Cards.css'
+import { Link } from 'react-router-dom'
 
-function Card({ name, image, status, species, id }) {
+function Card({datos }) {
+    // console.log(datos)
     return (
         <>
 
-                <img src={image} alt="" className='card-image' />
+            <Link to={`/character/${datos.id}`} className='card-link'>
+                <img src={datos.image} alt="" className='card-image' />
                 <div className="card-body">
-                    <h3 className='title' >{name}</h3>
-                    {/* <span className='status' >{status}</span> */}
-                    <span className='species' >{species}</span>
+                    <h3 className='title' >{datos.name}</h3>
+                    <span className='species' >{datos.species}</span>
                 </div >
-        </>
-    )
+                </Link >
+
+            </>
+            )
 }
 
-export default Card
+            export default Card

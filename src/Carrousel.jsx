@@ -1,9 +1,10 @@
 import React from 'react'
 import CardCarrousel from './CardCarrousel'
+import Card from './components/Card'
 
 function Carrousel(data) {
   return (
-    <CardCarrousel datos={data} />
+    <Card datos={data} />
   )
 }
 
